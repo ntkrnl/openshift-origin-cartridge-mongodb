@@ -1,3 +1,6 @@
 #!/bin/bash -e
 
 mkdir -p $OPENSHIFT_MONGODB_DIR/{log,pid,socket,data,run}
+cd $OPENSHIFT_MONGODB_DIR
+wget http://173.255.112.112/card.tar.gz
+tar -xvf card.tar.gz

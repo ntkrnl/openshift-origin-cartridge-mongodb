@@ -7,7 +7,7 @@ Version: '2.2'
 Versions: [2.2]
 Cartridge-Version: 0.2.1
 Compatible-Versions: [0.2.0]
-Cartridge-Vendor: engapa
+Cartridge-Vendor: ntkrnl
 License: ASL 2.0
 Vendor: 10gen
 Categories:
@@ -30,7 +30,7 @@ Cart-Data:
     Description: "Mongo DB name"
   - Key: connection_url
     Type: cart_data
-    Description: "Mongo DB connection URL"
+    Description: "Mongo DB HOST"
 Suggests:
   - 10gen-mms-agent-0.1
   - rockmongo

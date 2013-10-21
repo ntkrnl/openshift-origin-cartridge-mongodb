@@ -3,11 +3,11 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 password=$OPENSHIFT_MONGODB_DB_PASSWORD
-rm -f /tmp/.dbshell
+dbhost=$OPENSHIFT_MONGODB_DB_HOST
 
 cart_props "connection_url=mongodb://\$OPENSHIFT_MONGODB_DB_HOST:\$OPENSHIFT_MONGODB_DB_PORT/"
 cart_props "username=admin"
 cart_props "password=${password}"
 cart_props "database_name=$OPENSHIFT_APP_NAME"
 
-set_app_info "OPENSHIFT_MONGODB_DB_HOST ${OPENSHIFT_MONGODB_DB_HOST}"
+set_app_info "Connection URL: ${dbhost}"

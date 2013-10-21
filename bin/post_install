@@ -10,4 +10,4 @@ cart_props "username=admin"
 cart_props "password=${password}"
 cart_props "database_name=$OPENSHIFT_APP_NAME"
 
-set_app_info "OPENSHIFT_MONGODB_DB_HOST ${$OPENSHIFT_MONGODB_DB_HOST}"
+set_app_info "OPENSHIFT_MONGODB_DB_HOST ${OPENSHIFT_MONGODB_DB_HOST}"
